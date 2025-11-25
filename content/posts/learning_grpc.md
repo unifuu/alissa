@@ -1,4 +1,9 @@
-# Learning gRPC
+---
+title: "Learning gRPC"
+date: "2025-11-25"
+summary: "📝 Quick notes on learning gRPC..."
+tags: ["grpc", "backend"]
+---
 
 ## stream_interfaces.go
 
