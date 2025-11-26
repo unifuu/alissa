@@ -30,7 +30,7 @@ params:
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
   ShowPageNums: true
-  ShowToc: false
+  ShowToc: true
   
   footer:
     hideCopyright: true

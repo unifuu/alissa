@@ -1,12 +1,12 @@
 ---
-title: "Reading List"
+title: "Book List"
 date: "2025-11-23"
-summary: "📚 My reading list..."
+summary: "📚 My book list..."
 tags: ["books"]
 ---
 
 | Title | Author | Origin Language | Released | Rating | Finished |
-| ----- | ------ | -------- | -------- | ------ | -------- |
+| ----- | ------ | --------------- | -------- | ------ | -------- |
 | [Beneath the Wheel](https://en.wikipedia.org/wiki/Beneath_the_Wheel) | Hermann Hesse | 🇩🇪 German | 1906 | | |
 | [Ivan the Fool](https://en.wikipedia.org/wiki/Ivan_the_Fool_(story)) | Leo Tolstoy | 🇷🇺 Russian | 1886 | 7 | Nov 22, 2025 |
 | [Steppenwolf](https://en.wikipedia.org/wiki/Steppenwolf_(novel)) | Hermann Hesse | 🇩🇪 German | 1927 | 8 | Nov 8, 2025 |

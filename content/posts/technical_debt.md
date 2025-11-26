@@ -6,8 +6,11 @@ tags: ["develop"]
 ---
 
 ## Backend
+
 - [ ] High-load traffic solution
 - [ ] gRPC
+- [ ] JWT
 
 ## DevOps
+
 - [ ] CI/CD
