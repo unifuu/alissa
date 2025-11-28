@@ -2,7 +2,7 @@
 title: "Learning gRPC"
 date: "2025-11-25"
 summary: "📝 Quick notes on learning gRPC..."
-tags: ["grpc", "backend"]
+tags: ["backend", "grpc"]
 ---
 
 ## stream_interfaces.go
@@ -112,7 +112,7 @@ Stream Open	        Maintaining a persistent connection for the chat session.
 
 Assume the mobile app makes a request to fetch user data, for example: GET https://api.example.com/users/123.
 
-| Phase | Step | Detail | Protocol/DAta Format |
+| Phase | Step | Detail | Protocol/Data Format |
 | ----- | ---- | ------ | --------------- |
 | Application Layer | 1. Function Call | The App calls a method in the HTTP Client Library (e.g., Retrofit/Alamofire) | Programming Language Function |
 | | 2. Request Construction | The client library assembles the HTTP Request: Method (GET), URL, and Headers (Accept: application/json) | HTTP Request Format (Plain Text) |

@@ -2,7 +2,7 @@
 title: "Learning OAuth 2.0"
 date: "2025-11-28"
 summary: "📝 Quick notes on learning OAuth 2.0..."
-tags: ["security", "backend"]
+tags: ["security"]
 ---
 
 ## Definition
