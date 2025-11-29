@@ -9,9 +9,9 @@ tags: ["develop"]
 
 - [ ] High-load traffic solution
 - [ ] gRPC
-- [ ] JWT
+- [x] ~~JWT~~
 - [ ] Microservices
 
 ## DevOps
 
-- [ ] CI/CD
+- [x] ~~CI/CD~~

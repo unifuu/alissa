@@ -1,7 +1,7 @@
 ---
-title: "Learning gRPC"
+title: "About gRPC"
 date: "2025-11-25"
-summary: "📝 Quick notes on learning gRPC..."
+summary: "📝 Quick notes on gRPC..."
 tags: ["backend", "grpc"]
 ---
 
@@ -114,7 +114,7 @@ Assume the mobile app makes a request to fetch user data, for example: GET https
 
 | Phase | Step | Detail | Protocol/Data Format |
 | ----- | ---- | ------ | --------------- |
-| Application Layer | 1. Function Call | The App calls a method in the HTTP Client Library (e.g., Retrofit/Alamofire) | Programming Language Function |
+| Application Layer | 1. Function Call | The App calls a method in the HTTP Client Library | Programming Language Function |
 | | 2. Request Construction | The client library assembles the HTTP Request: Method (GET), URL, and Headers (Accept: application/json) | HTTP Request Format (Plain Text) |
 | Protocol Layer | 3. DNS Resolution | The system resolves the domain name api.example.com to the server's IP address | DNS Protocol |
 | | 4. Connection Establishment | The App initiates a TCP connection with the server's IP, usually followed by a TLS/SSL Handshake (for HTTPS). | TCP/IP, TLS/SSL |

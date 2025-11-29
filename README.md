@@ -1,3 +1,3 @@
-# ✝️ Alissa
+# Alissa
 
-My personal website.
+https://unifuu.dev

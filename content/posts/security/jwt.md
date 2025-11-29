@@ -1,7 +1,7 @@
 ---
-title: "Learning JWT"
+title: "About JWT"
 date: "2025-11-28"
-summary: "📝 Quick notes on learning JWT..."
+summary: "📝 Quick notes on JWT..."
 tags: ["security"]
 ---
 
@@ -47,7 +47,7 @@ HMACSHA256(
 )
 ```
 
-## Work Flow
+## Workflow
 
 1. User login, backend checks credentials
 
