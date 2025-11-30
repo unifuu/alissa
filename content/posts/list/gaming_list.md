@@ -1,7 +1,7 @@
 ---
-title: "Game List"
+title: "Gaming List"
 date: "2025-11-23"
-summary: "🎮 My game list..."
+summary: "🎮 My gaming list..."
 tags: ["games"]
 ---
 

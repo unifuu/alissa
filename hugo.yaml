@@ -16,6 +16,11 @@ minify:
   # minifyOutput: true
 
 params:
+  profileMode:
+    enabled: true
+    title: Fū
+    subtitle: "[💻 Coding](https://github.com/unifuu) | [📚 Reading](https://unifuu.dev/posts/list/reading_list/) | [🎮 Gaming](https://unifuu.dev/posts/list/game_list/)"
+
   env: production
   DateFormat: "January 2, 2006"
   defaultTheme: auto
@@ -77,6 +82,7 @@ menu:
       weight: 20
     - name: GitHub
       url: https://github.com/unifuu
+      weight: 30
 
 markup:
   highlight:

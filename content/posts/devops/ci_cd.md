@@ -2,7 +2,7 @@
 title: "About CI/CD"
 date: "2025-11-29"
 summary: "📝 Quick notes on CI/CD..."
-tags: ["devops", "ci/cd"]
+tags: ["devops"]
 ---
 
 ## Definition

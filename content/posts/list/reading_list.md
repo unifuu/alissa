@@ -9,12 +9,13 @@ tags: ["books"]
 
 | Title | Author | Origin | Released | Rating | Finished|
 | ----- | ------ | --------------- | -------- | ------ | -------- |
-| [Beneath the Wheel](https://en.wikipedia.org/wiki/Beneath_the_Wheel) | Hermann Hesse | 🇩🇪 | 1906 | | |
+| [Narcissus and Goldmund](https://en.wikipedia.org/wiki/Narcissus_and_Goldmund) | Hermann Hesse | 🇩🇪 | 1930 |  |  |
+| [Beneath the Wheel](https://en.wikipedia.org/wiki/Beneath_the_Wheel) | Hermann Hesse | 🇩🇪 | 1906 | 10 | Nov 30 |
 | [Ivan the Fool](https://en.wikipedia.org/wiki/Ivan_the_Fool_(story)) | Leo Tolstoy | 🇷🇺 | 1886 | 7 | Nov 22 |
 | [Steppenwolf](https://en.wikipedia.org/wiki/Steppenwolf_(novel)) | Hermann Hesse | 🇩🇪 | 1927 | 8 | Nov 8 |
 | [Demian](https://en.wikipedia.org/wiki/Demian) | Hermann Hesse | 🇩🇪 | 1919 | 9 | Oct 21 |
 | [The Metamorphosis](https://en.wikipedia.org/wiki/The_Metamorphosis) | Franz Kafka | 🇦🇹 | 1915 | 8 | Oct 7 |
-| [The Razor's Edge](https://en.wikipedia.org/wiki/The_Razor%27s_Edge) | W. Somerset Maugham | 🇬🇧 | 1944 | 8 | Oct 3 |
+| [The Razor's Edge](https://en.wikipedia.org/wiki/The_Razor%27s_Edge) | W. Somerset Maugham | 🇬🇧 | 1944 | 9 | Oct 3 |
 | [The Moon and Sixpence](https://en.wikipedia.org/wiki/The_Moon_and_Sixpence) | W. Somerset Maugham | 🇬🇧 | 1919 | 8 | Oct 1 |
 | [Siddhartha](https://en.wikipedia.org/wiki/Siddhartha_(novel)) | Hermann Hesse | 🇩🇪 | 1922 | 10 | Sept 18 |
 | [The Baron in the Trees](https://en.wikipedia.org/wiki/The_Baron_in_the_Trees) | Italo Calvino | 🇮🇹 | 1957 | 7 | Sept 15 |
