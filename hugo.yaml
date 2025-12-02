@@ -20,11 +20,6 @@ params:
     enabled: true
     title: Fū
     subtitle: "[💻 Coding](https://github.com/unifuu) | [📚 Reading](https://unifuu.dev/posts/list/reading_list/) | [🎮 Gaming](https://unifuu.dev/posts/list/gaming_list/)"
-    buttons:
-      - name: Blog
-        url: posts
-      - name: Tags
-        url: tags
 
   env: production
   DateFormat: "January 2, 2006"
@@ -78,7 +73,7 @@ params:
 menu:
   main:
     - identifier: posts
-      name: Posts
+      name: Blog
       url: /posts/
       weight: 10
     - identifier: tags
