@@ -19,13 +19,12 @@ params:
   profileMode:
     enabled: true
     title: Fū
-    subtitle: "[💻 Coding](https://github.com/unifuu) | [📚 Reading](https://unifuu.dev/posts/list/reading_list/) | [🎮 Gaming](https://unifuu.dev/posts/list/gaming_list/)"
-    
-    buttons:
-        - name: Blog
-          url: posts
-        - name: Tags
-          url: tags
+    subtitle: "[💻 Coding](https://github.com/unifuu) | [📚 Reading](/posts/lists/reading_list) | [🎮 Gaming](/posts/lists/gaming_list)"
+    # buttons:
+    #     - name: Blog
+    #       url: posts
+    #     - name: Tags
+    #       url: tags
   env: production
   DateFormat: "January 2, 2006"
   defaultTheme: auto
@@ -85,9 +84,6 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
-    - name: GitHub
-      url: https://github.com/unifuu
-      weight: 30
 
 markup:
   highlight:
