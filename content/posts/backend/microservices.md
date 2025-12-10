@@ -98,7 +98,7 @@ Gateway → gRPC (binary)
 - A piece of software that acts as an `intermediary` for communication between different applications, systems, or services.
 - It is used to send, store, and route messages reliably between applications, even if they are written in different languages or running on different platforms.
 
-### Definition
+### Basic
 
 A message broker.
 - Producer: A person sending a letter
@@ -165,3 +165,29 @@ A message broker.
     - Durable queue: Queue survives broker restart
     - Persistent message: Message stored on disk
 - Both must be enabled for full safety.
+
+### Advance
+
+#### Channel
+
+- A Channel in RabbitMQ is:
+    - A virtual connection inside a TCP connection
+    - The real unit that does publishing, consuming, ack, confirms, flow-control
+    - Concurrency-safe, because multiple goroutines may use it
+
+#### Synchronization & Concurrency Control
+
+``` go
+type Channel struct {
+	destructor sync.Once
+	m          sync.Mutex // struct field mutex
+	confirmM   sync.Mutex // publisher confirms state mutex
+	notifyM    sync.RWMutex
+    // ...
+}
+
+- `destructor`: ensures the channel is closed only once
+- `m`: Global channel mutex, protects general channel state
+- `confirmM`: protects publisher confirm state
+- `notifyM`: protects notification listeners
+```
