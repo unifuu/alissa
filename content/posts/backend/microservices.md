@@ -129,7 +129,7 @@ A message broker.
 - Exchange decides which queues should receive message.
     - Direct: Exact match on routing key.
     - Topic: Wildcard match (*/#)
-    - Fan-out: Broadcast to all bound queues
+    - Fanout: Broadcast to all bound queues
     - Headers: Match based on headers
 
 5. Queue
