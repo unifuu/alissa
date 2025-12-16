@@ -2,7 +2,7 @@
 title: "About Locks"
 date: "2025-12-10"
 summary: "📝 Quick notes on Locks..."
-tags: ["backend", "locks"]
+tags: ["backend", "database", "locks"]
 ---
 
 ## Pessimistic Lock
