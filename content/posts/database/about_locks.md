@@ -30,7 +30,7 @@ COMMIT;
 -- 1. Read
 SELECT coins, version FROM players WHERE id = 39; -- if version = 5
 
--- 2. Update:
+-- 2. Update
 UPDATE players
 SET coins = coins + 10, version = version + 1
 WHERE id = 39 AND version = 5;

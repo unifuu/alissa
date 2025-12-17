@@ -1,6 +1,6 @@
 ---
 title: "About Kong"
-date: "2025-12-14"
+date: "2025-12-16"
 summary: "📝 Quick notes on Kong..."
 tags: ["backend", "api", "kong"]
 ---
