@@ -1,3 +1,3 @@
 # Gardevoir
 
-My personal [blog](https://unifuu.dev).
+My [blog](https://unifuu.dev).
