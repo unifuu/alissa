@@ -105,3 +105,57 @@ func GrantReward(ctx context.Context, rdb *redis.Client, playerID, missionID str
 	).Err()
 }
 ```
+
+## Prefix
+
+| Prefix | Data Structure |
+| ------ | -------------- |
+| None | String |
+| H | Hash |
+| S | Set |
+| Z | Sorted Set |
+| L | List |
+| X | Stream | 
+
+## Z
+
+- Sorted Set (ZSET)
+	- A Sorted Set:
+	- Stores unique members
+	- Each member has a score
+	- Members are ordered by score
+
+### ZREM
+
+``` redis
+# Remove one or more members from a sorted set.
+# Return (integer) N: number of members actually removed.
+ZREM key member [member ...]
+
+# Remove player1 and player2 from leaderboard.
+ZREM leaderboard player1 player2
+```
+
+### ZRANK
+
+``` redis
+# Returns the rank of a member in a sorted set (low to high)
+ZRANK key member
+```
+
+### ZREVRANK
+
+``` redis
+# Returns the rank of a member in a sorted set (high to low)
+ZREVRANK key member
+```
+
+### ZINCRBY
+
+``` redis
+# Increment the score of a member in a Sorted Set.
+ZINCRBY key increment member
+
+# Add 10 points to player1’s score in the leaderboard sorted set.
+ZINCRBY leaderboard 10 player1
+```
