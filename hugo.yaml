@@ -20,11 +20,11 @@ params:
     enabled: true
     title: Fū
     subtitle: "[💻 Coding](https://github.com/unifuu) | [📚 Reading](/posts/literature/reading_list) | [🎮 Gaming](https://unifuu.github.io/rowlet/)"
-    buttons:
-      - name: Blog
-        url: posts
-      - name: Tags
-        url: tags
+    # buttons:
+    #   - name: Blog
+    #     url: posts
+    #   - name: Tags
+    #     url: tags
   env: production
   DateFormat: "January 2, 2006"
   defaultTheme: auto
@@ -65,15 +65,16 @@ params:
 
   # for search
   # https://fusejs.io/api/options.html
+  enableSearch: true
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
     location: 0
     distance: 1000
     threshold: 0.4
-    minMatchCharLength: 0
+    minMatchCharLength: 2
     limit: 10
-    keys: ["title", "permalink", "summary", "content"]
+    keys: ["title", "summary", "tags"]
 menu:
   main:
     - identifier: posts
@@ -84,9 +85,19 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
     - name: GitHub
       url: https://github.com/unifuu
 
 markup:
   highlight:
     noClasses: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON

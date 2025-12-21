@@ -23,7 +23,6 @@ tags: ["books"]
 | [La Symphonie pastorale](https://en.wikipedia.org/wiki/La_Symphonie_pastorale) | André Gide | 🇫🇷 | 1919 | 9 | Sept 8 |
 | [The Immoralist](https://en.wikipedia.org/wiki/The_Immoralist) | André Gide | 🇫🇷 | 1902 | 9 | Sept 7 |
 | [The Kreutzer Sonata](https://en.wikipedia.org/wiki/The_Kreutzer_Sonata) | Leo Tolstoy | 🇷🇺 | 1889 | 9 | Sept 3 |
-| [The Vegetarian](https://en.wikipedia.org/wiki/The_Vegetarian) | Han Kang | 🇰🇷 | 2007 | 6 | Sept 2 |
 | [Invisible Cities](https://en.wikipedia.org/wiki/Invisible_Cities) | Italo Calvino | 🇮🇹 | 1972 | 7 | Aug 29 |
 | [The Death of Ivan Ilyich](https://en.wikipedia.org/wiki/The_Death_of_Ivan_Ilyich) | Leo Tolstoy | 🇷🇺 | 1886 | 9 | Aug 26 |
 | [A Pale View of Hills²](https://en.wikipedia.org/wiki/A_Pale_View_of_Hills) | Kazuo Ishiguro | 🇬🇧 | 1982 | 8 | Aug 24 |
