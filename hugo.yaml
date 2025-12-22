@@ -19,7 +19,7 @@ params:
   profileMode:
     enabled: true
     title: Fū
-    subtitle: "[💻 Coding](https://github.com/unifuu) | [📚 Reading](/posts/literature/reading_list) | [🎮 Gaming](https://unifuu.github.io/rowlet/)"
+    subtitle: "[💻 Coding](https://github.com/unifuu) | [📚 Reading](/posts/reading/reading_list) | [🎮 Gaming](https://unifuu.github.io/rowlet/)"
     buttons:
       - name: Blog
         url: posts
@@ -89,8 +89,6 @@ menu:
       name: Search
       url: /search/
       weight: 30
-    - name: Gamelog
-      url: https://unifuu.github.io/rowlet/
     - name: GitHub
       url: https://github.com/unifuu
 

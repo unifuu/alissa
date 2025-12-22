@@ -10,7 +10,7 @@ tags: ["books"]
 | Title | Author | Origin | Released | Rating | Finished|
 | ----- | ------ | --------------- | -------- | ------ | -------- |
 | [Les Caves du Vatican](https://fr.wikipedia.org/wiki/Les_Caves_du_Vatican) | André Gide | 🇫🇷 | 1914 |  |  |
-| [Narcissus and Goldmund](/posts/literature/narcissus_and_goldmund/) | Hermann Hesse | 🇩🇪 | 1930 | 9 | Dec 13 |
+| [Narcissus and Goldmund](https://en.wikipedia.org/wiki/Narcissus_and_Goldmund) | Hermann Hesse | 🇩🇪 | 1930 | 9 | Dec 13 |
 | [Beneath the Wheel](https://en.wikipedia.org/wiki/Beneath_the_Wheel) | Hermann Hesse | 🇩🇪 | 1906 | 9 | Nov 30 |
 | [Ivan the Fool](https://en.wikipedia.org/wiki/Ivan_the_Fool_(story)) | Leo Tolstoy | 🇷🇺 | 1886 | 7 | Nov 22 |
 | [Steppenwolf](https://en.wikipedia.org/wiki/Steppenwolf_(novel)) | Hermann Hesse | 🇩🇪 | 1927 | 8 | Nov 8 |
