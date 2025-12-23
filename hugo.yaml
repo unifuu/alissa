@@ -19,11 +19,11 @@ params:
   profileMode:
     enabled: true
     title: Fū
-    subtitle: "[💻 Coding](https://github.com/unifuu) | [📚 Reading](/posts/reading/reading_list) | [🎮 Gaming](https://unifuu.github.io/rowlet/)"
+    subtitle: "[💻 Coding](https://github.com/unifuu) | [🎮 Gaming](https://unifuu.github.io/rowlet/) | [📚 Reading](/posts/literature/reading_list)"
     buttons:
-      - name: Blog
+      - name: 📑 Posts
         url: posts
-      - name: Tags
+      - name: 🔖 Tags
         url: tags
   env: production
   DateFormat: "January 2, 2006"
@@ -78,7 +78,7 @@ params:
 menu:
   main:
     - identifier: posts
-      name: Blog
+      name: Posts
       url: /posts/
       weight: 10
     - identifier: tags
