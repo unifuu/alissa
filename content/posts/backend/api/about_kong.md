@@ -6,7 +6,6 @@ tags: ["backend", "api", "kong"]
 ---
 
 ## Definition
-
 - An API Gateway.
 - A reverse proxy (Based on Nginx + OpenResty)
 - A traffic control layer for microservices

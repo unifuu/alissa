@@ -7,15 +7,65 @@
   {{ end }}
 </header>
 
-{{ $finished := where (where .Pages "Params.status" "finished") "Params.finished" "ne" nil }}
+{{/* ================= Reading ================= */}}
+
+{{ $reading := where .Pages "Params.status" "reading" }}
+
+{{ if gt (len $reading) 0 }}
+  <details class="books-year-block books-reading-block" open>
+    <summary class="books-year-header">
+      <span class="books-year-title">Reading</span>
+      <span class="books-year-count">· {{ len $reading }} books</span>
+    </summary>
+
+    <div class="book-grid">
+      {{ range sort $reading "Title" }}
+        <article class="book-card">
+          <a href="{{ .RelPermalink }}">
+
+            <div class="book-cover-wrapper">
+              {{ with .Params.cover.image }}
+                <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+              {{ end }}
+
+              {{ with .Params.rating }}
+                <span class="book-rating-badge">{{ . }}</span>
+              {{ end }}
+            </div>
+
+            <h3 class="book-title">{{ .Title }}</h3>
+
+            {{ if or .Params.origin .Params.aliases }}
+              <p class="book-origin">
+                {{ with .Params.origin }}
+                  <span class="book-flag">{{ . }}</span>
+                {{ end }}
+                {{ with .Params.aliases }}
+                  <span class="book-alias">{{ index . 0 }}</span>
+                {{ end }}
+              </p>
+            {{ end }}
+
+            <p class="book-meta">
+              {{ .Params.author }} · {{ .Params.year }}
+            </p>
+
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </details>
+{{ end }}
+
+{{/* ================= Finished ================= */}}
+
+{{ $finished := where (where .Pages "Params.status" "finished") "Date" "gt" (time "0002-01-01") }}
 
 {{ $years := newScratch }}
 {{ $yearList := slice }}
 
 {{ range $finished }}
-  {{ $t := time.AsTime .Params.finished }}
-  {{ $y := $t.Format "2006" }}
-
+  {{ $y := .Date.Format "2006" }}
   {{ $existing := $years.Get $y }}
 
   {{ if not $existing }}
@@ -23,9 +73,7 @@
     {{ $yearList = $yearList | append $y }}
   {{ else }}
     {{ $list := slice }}
-    {{ range $existing }}
-      {{ $list = $list | append . }}
-    {{ end }}
+    {{ range $existing }}{{ $list = $list | append . }}{{ end }}
     {{ $list = $list | append . }}
     {{ $years.Set $y $list }}
   {{ end }}
@@ -44,7 +92,7 @@
     </summary>
 
     <div class="book-grid">
-      {{ range $books }}
+      {{ range sort $books "Date" "desc" }}
         <article class="book-card">
           <a href="{{ .RelPermalink }}">
 
@@ -54,22 +102,21 @@
               {{ end }}
 
               {{ with .Params.rating }}
-                <span class="book-rating-badge">⭐️ {{ . }}</span>
+                <span class="book-rating-badge">{{ . }}</span>
               {{ end }}
             </div>
 
             <h3 class="book-title">{{ .Title }}</h3>
 
             {{ if or .Params.origin .Params.aliases }}
-            <p class="book-origin">
+              <p class="book-origin">
                 {{ with .Params.origin }}
-                <span class="book-flag">{{ . }}</span>
+                  <span class="book-flag">{{ . }}</span>
                 {{ end }}
-
                 {{ with .Params.aliases }}
-                <span class="book-alias">{{ index . 0 }}</span>
+                  <span class="book-alias">{{ index . 0 }}</span>
                 {{ end }}
-            </p>
+              </p>
             {{ end }}
 
             <p class="book-meta">
@@ -77,7 +124,7 @@
             </p>
 
             <p class="book-finished">
-              {{ time.AsTime .Params.finished | time.Format "Jan 2, 2006" }}
+              {{ .Date | time.Format "Jan 2, 2006" }}
             </p>
 
           </a>

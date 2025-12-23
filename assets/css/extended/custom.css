@@ -13,7 +13,8 @@ body {
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1.2rem;
+  column-gap: 1.2rem;
+  row-gap: 2.0rem;
 }
 
 /* ===== Card ===== */
@@ -140,4 +141,19 @@ details[open] > .books-year-header::before {
 
 .book-alias {
   font-style: italic;
+}
+
+/* Make Reading block spacing clearer */
+.books-reading-block {
+  margin-bottom: 3.5rem;
+}
+
+/* Increase spacing between year groups */
+.books-year-block {
+  margin-bottom: 3rem;
+}
+
+/* Ensure Reading title matches year title size */
+.books-year-header {
+  font-size: 1.35rem;
 }
