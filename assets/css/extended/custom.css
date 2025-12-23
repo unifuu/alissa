@@ -7,3 +7,137 @@ body {
 .nav .logo a {
   font-family: "AmericanTypewriter", "Cutive Mono", monospace;
 }
+
+/* ===== Grid ===== */
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.2rem;
+}
+
+/* ===== Card ===== */
+
+.book-card {
+  text-align: left;
+}
+
+.book-cover-wrapper {
+  position: relative;
+}
+
+.book-cover-wrapper img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* ===== Rating Badge ===== */
+
+.book-rating-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+
+  padding: 4px 8px;
+  min-height: 24px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== Title ===== */
+
+.book-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.4rem 0 0.1rem;
+}
+
+/* ===== Meta ===== */
+
+.book-meta {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin: 0;
+}
+
+.book-finished {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 0.1rem;
+}
+
+/* ===== Year Section ===== */
+
+.books-year-block {
+  margin-bottom: 2rem;
+}
+
+.books-year-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.books-year-header::-webkit-details-marker {
+  display: none;
+}
+
+.books-year-title {
+  margin-right: 0.5rem;
+}
+
+.books-year-count {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* ===== Fold Indicator ===== */
+
+.books-year-header::before {
+  content: "▶";
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: transform 0.2s ease;
+}
+
+details[open] > .books-year-header::before {
+  content: "▼";
+}
+
+/* ===== Origins ===== */
+
+.book-origin {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin: 0.35rem 0 0.1rem;
+  line-height: 1;
+}
+
+.book-alias {
+  font-style: italic;
+}

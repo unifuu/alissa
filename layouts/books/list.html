@@ -1,0 +1,90 @@
+{{ define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}
+    <p>{{ . }}</p>
+  {{ end }}
+</header>
+
+{{ $finished := where (where .Pages "Params.status" "finished") "Params.finished" "ne" nil }}
+
+{{ $years := newScratch }}
+{{ $yearList := slice }}
+
+{{ range $finished }}
+  {{ $t := time.AsTime .Params.finished }}
+  {{ $y := $t.Format "2006" }}
+
+  {{ $existing := $years.Get $y }}
+
+  {{ if not $existing }}
+    {{ $years.Set $y (slice .) }}
+    {{ $yearList = $yearList | append $y }}
+  {{ else }}
+    {{ $list := slice }}
+    {{ range $existing }}
+      {{ $list = $list | append . }}
+    {{ end }}
+    {{ $list = $list | append . }}
+    {{ $years.Set $y $list }}
+  {{ end }}
+{{ end }}
+
+{{ $yearList = sort $yearList "value" "desc" }}
+
+{{ range $yearList }}
+  {{ $books := $years.Get . }}
+  {{ $count := len $books }}
+
+  <details class="books-year-block" open>
+    <summary class="books-year-header">
+      <span class="books-year-title">{{ . }}</span>
+      <span class="books-year-count">· {{ $count }} books</span>
+    </summary>
+
+    <div class="book-grid">
+      {{ range $books }}
+        <article class="book-card">
+          <a href="{{ .RelPermalink }}">
+
+            <div class="book-cover-wrapper">
+              {{ with .Params.cover.image }}
+                <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+              {{ end }}
+
+              {{ with .Params.rating }}
+                <span class="book-rating-badge">⭐️ {{ . }}</span>
+              {{ end }}
+            </div>
+
+            <h3 class="book-title">{{ .Title }}</h3>
+
+            {{ if or .Params.origin .Params.aliases }}
+            <p class="book-origin">
+                {{ with .Params.origin }}
+                <span class="book-flag">{{ . }}</span>
+                {{ end }}
+
+                {{ with .Params.aliases }}
+                <span class="book-alias">{{ index . 0 }}</span>
+                {{ end }}
+            </p>
+            {{ end }}
+
+            <p class="book-meta">
+              {{ .Params.author }} · {{ .Params.year }}
+            </p>
+
+            <p class="book-finished">
+              {{ time.AsTime .Params.finished | time.Format "Jan 2, 2006" }}
+            </p>
+
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </details>
+{{ end }}
+
+{{ end }}
