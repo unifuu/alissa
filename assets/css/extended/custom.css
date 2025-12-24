@@ -8,7 +8,9 @@ body {
   font-family: "AmericanTypewriter", "Cutive Mono", monospace;
 }
 
-/* ===== Grid ===== */
+/* =========================================================
+   Book Grid
+   ========================================================= */
 
 .book-grid {
   display: grid;
@@ -17,11 +19,13 @@ body {
   row-gap: 2.0rem;
 }
 
-/* ===== Card ===== */
-
 .book-card {
   text-align: left;
 }
+
+/* =========================================================
+   Book Cover
+   ========================================================= */
 
 .book-cover-wrapper {
   position: relative;
@@ -34,7 +38,9 @@ body {
   border-radius: 6px;
 }
 
-/* ===== Rating Badge ===== */
+/* =========================================================
+   Rating Badge
+   ========================================================= */
 
 .book-rating-badge {
   position: absolute;
@@ -44,7 +50,6 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   gap: 4px;
 
   background: rgba(0, 0, 0, 0.75);
@@ -60,19 +65,18 @@ body {
   font-weight: 600;
   line-height: 1;
 
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
 }
 
-/* ===== Title ===== */
+/* =========================================================
+   Book Title & Meta
+   ========================================================= */
 
 .book-title {
   font-size: 1rem;
   font-weight: 600;
   margin: 0.4rem 0 0.1rem;
 }
-
-/* ===== Meta ===== */
 
 .book-meta {
   font-size: 0.85rem;
@@ -86,51 +90,9 @@ body {
   margin-top: 0.1rem;
 }
 
-/* ===== Year Section ===== */
-
-.books-year-block {
-  margin-bottom: 2rem;
-}
-
-.books-year-header {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  font-size: 1.3rem;
-  font-weight: 600;
-  list-style: none;
-  margin-bottom: 1rem;
-}
-
-.books-year-header::-webkit-details-marker {
-  display: none;
-}
-
-.books-year-title {
-  margin-right: 0.5rem;
-}
-
-.books-year-count {
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-/* ===== Fold Indicator ===== */
-
-.books-year-header::before {
-  content: "▶";
-  font-size: 0.9rem;
-  opacity: 0.8;
-  transition: transform 0.2s ease;
-}
-
-details[open] > .books-year-header::before {
-  content: "▼";
-}
-
-/* ===== Origins ===== */
+/* =========================================================
+   Origin / Alias
+   ========================================================= */
 
 .book-origin {
   font-size: 0.75rem;
@@ -143,48 +105,130 @@ details[open] > .books-year-header::before {
   font-style: italic;
 }
 
-/* Make Reading block spacing clearer */
+/* =========================================================
+   Reading Section
+   ========================================================= */
+
 .books-reading-block {
   margin-bottom: 3.5rem;
 }
 
-/* Increase spacing between year groups */
+/* =========================================================
+   Year Section
+   ========================================================= */
+
 .books-year-block {
   margin-bottom: 3rem;
 }
 
-/* Ensure Reading title matches year title size */
 .books-year-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   font-size: 1.35rem;
+  font-weight: 600;
+
+  list-style: none;
+  margin-bottom: 1rem;
 }
+
+/* Hide native summary marker (year) */
+.books-year-header::-webkit-details-marker {
+  display: none;
+}
+.books-year-header::marker {
+  content: "";
+}
+
+.books-year-title {
+  margin-right: 0.5rem;
+}
+
+.books-year-count {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Custom fold indicator (year) */
+.books-year-header::before {
+  content: "▶";
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-right: 0.2rem;
+  transition: transform 0.2s ease;
+}
+
+details[open] > .books-year-header::before {
+  content: "▼";
+}
+
+/* =========================================================
+   Month Section
+   ========================================================= */
 
 .books-month-block {
   margin-left: 1.5rem;
-  margin-top: 1rem;
-}
-
-.books-month-header {
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-
-/* ===== Month Group Spacing ===== */
-/* Default spacing between month groups */
-.books-month-block {
   margin-top: 1.8rem;
 }
 
-.books-year-block > .books-month-block:first-of-type {
-  margin-top: 0.5rem;
-}
-
-/* Month header spacing */
+/* Month header */
 .books-month-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.85;
+
   margin-bottom: 0.5rem;
   padding-top: 0.2rem;
+  letter-spacing: 0.02em;
+
+  list-style: none;
+}
+
+/* Hide native summary marker (month) */
+.books-month-header::-webkit-details-marker {
+  display: none;
+}
+.books-month-header::marker {
+  content: "";
+}
+
+/* Custom fold indicator (month) */
+.books-month-header::before {
+  content: "▶";
+  display: inline-block;
+
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+  opacity: 0.7;
+
+  transition: transform 0.2s ease;
+}
+
+details[open] > .books-month-header::before {
+  content: "▼";
+}
+
+/* =========================================================
+   Month Spacing Rules
+   ========================================================= */
+
+/* Space between year header and first month */
+.books-year-block > .books-month-block:first-of-type {
+  margin-top: 0.3rem;
 }
 
 /* Space between month header and grid */
 .books-month-block > .book-grid {
-  margin-top: 0.6rem;
+  margin-top: 0.6em;
+}
+
+.month-separator {
+  margin: 0 0.3rem;
+  opacity: 0.6;
 }

@@ -114,9 +114,12 @@
   <details class="books-month-block" open>
     <summary class="books-month-header">
       <span class="books-month-title">
-        {{ (time (printf "%s-%s-01" $year $month)).Format "January" }}
+        🗓️ {{ (time (printf "%s-%s-01" $year $month)).Format "January" }}
       </span>
-      <span class="books-month-count">· {{ len $monthBooks }} books</span>
+      <span class="books-month-count">
+        <span class="month-separator">·</span>
+        {{ len $monthBooks }} books
+      </span>
     </summary>
 
     <div class="book-grid">

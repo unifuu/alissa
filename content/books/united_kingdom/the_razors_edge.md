@@ -5,7 +5,7 @@ aliases:
 author: W. Somerset Maugham
 year: 1944
 origin: 🇬🇧
-rating: 8
+rating: 9
 status: finished
 date: 2025-10-03
 cover:

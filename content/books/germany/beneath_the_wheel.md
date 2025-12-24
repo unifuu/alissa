@@ -9,5 +9,5 @@ rating: 9
 status: finished
 date: 2025-11-30
 cover:
-  image: "https://m.media-amazon.com/images/I/71sMu8T5tiL._SL1500_.jpg"
+  image: "https://m.media-amazon.com/images/I/61Uh7F1CKtL._SL1500_.jpg"
 ---
