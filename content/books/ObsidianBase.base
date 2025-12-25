@@ -21,12 +21,12 @@ views:
       - property: status
         direction: ASC
     columnSize:
-      note.title: 307
-      note.aliases: 260
-      note.author: 181
+      note.title: 245
+      note.aliases: 208
+      note.author: 149
       note.year: 68
-      note.origin: 55
-      note.rating: 71
+      note.origin: 23
+      note.rating: 26
   - type: cards
     name: Cards
     filters:

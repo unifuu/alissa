@@ -6,13 +6,13 @@ tags:
   - backend
   - javascript
 ---
-## 1. WHAT
-### Definition
+
+## Definition
 - A JavaScript runtime built on Chrome's V8 engine that executes JS outside the browser.
 - It is not a language or a framework; it is an environment that enables server-side JavaScript.
-### Components
+## Components
 - Includes a set of built-in modules (File System, HTTP, Path) to handle system-level tasks.
-## 2. WHY
+## Benefits
 - Unified language (JS / TS)
 	- Faster onboarding
 	- Shared types (DTOs, schemas)
@@ -21,7 +21,7 @@ tags:
 	- High concurrency
 	- Many fast requests
 	- Real-time connections
-## 3. WHERE
+## Applications
 - Backend APIs:
 	- REST APIs
 	- GraphQL APIs

@@ -8,14 +8,14 @@ tags:
   - messaging
   - queue
 ---
-## WHAT
-### Definition
+
+## Definition
 RabbitMQ is an open-source message broker:
 - Producer: A person sending a letter
 - Exchange: The post office
 - Queue: The mailbox
 - Consumer: The person receiving the letter
-### Components
+## Components
 1. Broker
 	- The message middleware that stores, routes, and delivers messages.
 2. Connection
@@ -66,7 +66,7 @@ RabbitMQ is an open-source message broker:
 	    - Durable queue: Queue survives broker restart
 	    - Persistent message: Message stored on disk
 	- Both must be enabled for full safety.
-## WHY
+## Message Broker
 A message broker is an intermediary system that receives, stores, routes, and delivers messages between producers and consumers in an asynchronous and decoupled way.
 ### Without a broker
 ```
