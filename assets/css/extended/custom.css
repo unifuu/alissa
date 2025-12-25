@@ -1,9 +1,20 @@
+/* Mono for code / Latin text */
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 
-body {
-  font-family: "AmericanTypewriter", "Cutive Mono", monospace;
-}
+/* Serif for CJK (HK / JP / KR) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
 
+body {
+  font-family:
+    "AmericanTypewriter",
+    "Cutive Mono",
+    "Noto Serif TC",
+    "Noto Serif JP",
+    "Noto Serif KR",
+    serif;
+}
 .nav .logo a {
   font-family: "AmericanTypewriter", "Cutive Mono", monospace;
 }
