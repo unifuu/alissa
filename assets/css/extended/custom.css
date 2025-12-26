@@ -16,7 +16,13 @@ body {
     serif;
 }
 .nav .logo a {
-  font-family: "AmericanTypewriter", "Cutive Mono", monospace;
+  font-family: 
+    "AmericanTypewriter",
+    "Cutive Mono",
+    "Noto Serif TC",
+    "Noto Serif JP",
+    "Noto Serif KR",
+    serif;
 }
 
 /* =========================================================

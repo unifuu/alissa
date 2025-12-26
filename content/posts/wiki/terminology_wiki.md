@@ -1,8 +1,10 @@
 ---
-title: "Some Terms"
-date: "2025-12-24"
-summary: "📰 Some terms..."
-tags: ["wiki"]
+title: Terminology Wiki
+date: 2025-12-24
+summary: 📰 Some unfamiliar terms...
+tags:
+  - wiki
+  - terminology
 ---
 
 ## Marketing
